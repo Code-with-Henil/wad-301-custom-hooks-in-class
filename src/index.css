@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+	@apply text-red-500 text-xl transition-colors hover:text-black duration-300;
+}
+
+@layer base {
+	:root {
+		--background: 255 255 255;
+		--foreground: 0 0 0;
+	}
+	.dark {
+		--background: 0 0 0;
+		--foreground: 255 255 255;
+	}
+}
